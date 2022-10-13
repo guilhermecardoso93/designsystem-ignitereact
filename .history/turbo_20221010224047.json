@@ -1,0 +1,12 @@
+{
+  "schema": "https://turborepo.org/schema.json",
+  "pipeline": [
+    "package/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "turbo": "^1.5.5"
+  }
+}
