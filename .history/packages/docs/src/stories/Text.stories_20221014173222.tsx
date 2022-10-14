@@ -6,28 +6,19 @@ export default {
   title: "Typography/Text",
   component: Text,
   args: {
-    size: 'md',
     children: "Exemplo de Texto.",
   },
   argTypes: {
-    size: {
-      options: [
-        'xxs',
-        'xs',
-        'sm',
-        'md',
-        'lg',
-        'xl',
-        '2xl',
-        '4xl',
-        '5xl',
-        '6xl',
-        '7xl',
-        '8xl',
-        '9xl',
-      ],
+    variant: {
+      options: ["primary", "secondary", "tertiary"],
       control: {
-        type: 'inline-radio',
+        type: "inline-radio",
+      },
+    },
+    size: {
+      options: ["sm", "md"],
+      control: {
+        type: "inline-radio",
       },
     },
   },

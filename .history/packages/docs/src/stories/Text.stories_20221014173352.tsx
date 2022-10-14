@@ -6,7 +6,6 @@ export default {
   title: "Typography/Text",
   component: Text,
   args: {
-    size: 'md',
     children: "Exemplo de Texto.",
   },
   argTypes: {

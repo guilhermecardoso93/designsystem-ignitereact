@@ -7,13 +7,24 @@ export default {
   component: Heading,
   args: {
     children: "Exemplo de Texto.",
-    size: "md",
+    size:'md',
   },
   argTypes: {
     size: {
-      options: ["sm", "md", "lg", "2xl", "4xl", "5xl", "6xl"],
+      options: [
+        
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        '2xl',
+        '4xl',
+        '5xl',
+        '6xl',
+        
+      ],
       control: {
-        type: "inline-radio",
+        type: 'inline-radio',
       },
     },
   },
