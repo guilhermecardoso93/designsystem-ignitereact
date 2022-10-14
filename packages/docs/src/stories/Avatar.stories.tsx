@@ -8,7 +8,14 @@ export default {
   args: {
     src: 'https://github.com/guilhermecardoso93.png',
     alt: 'Guilherme Cardoso'
-  }
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}

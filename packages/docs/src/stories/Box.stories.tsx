@@ -1,17 +1,24 @@
 /* eslint-disable prettier/prettier */
-import { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@ignite-ui/react'
+import { StoryObj, Meta } from "@storybook/react";
+import { Box, BoxProps, Text } from "@ignite-ui/react";
 
 export default {
-  title: 'Surfaces/Box',
+  title: "Surfaces/Box",
   component: Box,
   args: {
     children: (
       <>
         <Text>Elemento Box</Text>
       </>
-    )
-  }
-} as Meta<BoxProps>
+    ),
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
+} as Meta<BoxProps>;
 
-export const Primary: StoryObj<BoxProps> = {}
+export const Primary: StoryObj<BoxProps> = {};
